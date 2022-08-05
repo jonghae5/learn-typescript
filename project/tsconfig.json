@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2015","DOM","DOM.Iterable"],
+        "allowJs": true,
+        // "checkJs": true,
+        "target": "ES5",
+        "outDir": "./dist",
+        "moduleResolution": "Node",
+        "noImplicitAny": true,
+        "typeRoots":["./node_modules/@types","types"],
+        "strict": true, // 정해놓은 구성에서 조금 더 엄격하게 구성
+
+        // 아래 내용 포함
+        // "strictBindCallApply": true,
+        // "strictNullChecks": true,
+        // "strictPropertyInitialization": true,
+        // "noImplicitThis": true,
+        // "alwaysStrict": true
+        
+    },
+    "include": ["./src/**/*"],
+    "exclude": ["node_modules", "dist"],
+}

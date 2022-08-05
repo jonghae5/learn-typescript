@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true,
+        "noImplicitAny": false,
+        "skipLibCheck": true,
+        
+    },
+    
+    "exclude": ["./class-note/*.js","./example/*.js"]
+}

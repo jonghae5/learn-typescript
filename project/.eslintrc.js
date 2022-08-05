@@ -1,11 +1,13 @@
+// .eslintrc.js
 module.exports = {
   root: true,
   env: {
     browser: true,
     node: true,
-    jest: true,
   },
   extends: [
+    'eslint:recommended',
+    // eslint-plugin-prettier 로 인해 eslint 안에서 prettier 사용 가능
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -14,18 +16,15 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        singleQuote: true,
-        semi: true,
+        singleQuote: true, // "" 이냐 ' 이냐'
+        semi: true, // 세미 콜론
         useTabs: false,
-        tabWidth: 2,
-        printWidth: 80,
+        tabWidth: 2, // 탭 간격
+        printWidth: 80, //한 줄의 길이
         bracketSpacing: true,
         arrowParens: 'avoid',
       },
     ],
-    // '@typescript-eslint/no-explicit-any': 'off',
-    // "@typescript-eslint/explicit-function-return-type": 'off',
-    'prefer-const': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
